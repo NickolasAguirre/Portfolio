@@ -1,0 +1,133 @@
+/* Importa los estilos de Tailwind CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  margin: 0;
+
+  place-items: center;
+}
+
+.arrow {
+  animation-name: moviendrew;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 100px;
+}
+
+@keyframes moviendrew {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+article {
+  position: relative;
+  width: 550px;
+  transition: all 0.3s ease;
+}
+
+article img:first-child {
+  box-shadow: 0 60px 60px -60px #fff;
+  border-radius: 10%;
+  object-fit: fill;
+  width: 100%;
+}
+
+article img:last-child {
+  position: absolute;
+  width: 550px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  transition: 0.3s ease;
+  transform: perspective(250px);
+}
+
+article:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+article::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  width: 90%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10% rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0) 95%
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+article:hover::before {
+  opacity: 1;
+}
+
+article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+.instagram:hover {
+  background-image: linear-gradient(to bottom right, purple, yellow);
+  border-radius: 50%;
+}
+.facebook:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(6, 127, 148),
+    rgb(68, 0, 255)
+  );
+  border-radius: 50%;
+}
+
+.linkedin:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(46, 219, 205),
+    rgb(8, 64, 117)
+  );
+  border-radius: 50%;
+}
+
+.github:hover {
+  background-image: linear-gradient(to bottom right, black, white);
+  border-radius: 50%;
+}
+
+.write {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+
+  width: 16ch;
+
+  animation: typing 3s steps(16), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.fila::before {
+  content: "• ";
+  color: aqua;
+}
