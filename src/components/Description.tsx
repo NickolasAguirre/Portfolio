@@ -8,6 +8,7 @@ import {
   SiDotnet,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
+import Programador from "/public/img/programador.svg";
 
 const iconos = [
   {
@@ -102,7 +103,7 @@ const Description = () => {
       </div>
       <div className="m-auto flex justify-end items-center mx-10">
         <img
-          src="/public/img/programador.svg"
+          src={Programador}
           alt="imagen1"
           className="h-96 m-auto"
           id="trigger-image"

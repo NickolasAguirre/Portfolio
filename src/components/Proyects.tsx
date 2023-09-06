@@ -1,4 +1,6 @@
 import { Card, CardHeader, Image } from "@nextui-org/react";
+import BusseandoTours from "/public/img/BusseandoTours.jpg";
+import CineFilos from "/public/img/CineFilos.jpg";
 
 export const Proyects = () => {
   return (
@@ -13,7 +15,7 @@ const projects = [
     title: "Proyecto sobre gestión de cine",
     description:
       "El ultimo proyecto que realize como estudiante fue el de cines, el cual nos permite hacer las reservas de las butacas y gestionar sus elementos",
-    imageSrc: "/public/img/CineFilos.jpg",
+    imageSrc: CineFilos,
     alt: "CineFilos",
     linkGitHub: "https://github.com/NickolasAguirre/",
   },
@@ -21,7 +23,7 @@ const projects = [
     title: "Busseando Tours",
     description:
       "En mi epoca de estudiante hice un proyecto de gestion de paquetes turisticos",
-    imageSrc: "/public/img/BusseandoTours.jpg",
+    imageSrc: BusseandoTours,
     alt: "BusseandoTours",
     linkGitHub: "https://github.com/NickolasAguirre/BusseandoTours",
   },
