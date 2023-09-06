@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from "react";
-
-import { useRouter } from "next/router";
 import { BsArrowDown } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
 
