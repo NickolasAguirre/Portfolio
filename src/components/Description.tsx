@@ -102,7 +102,7 @@ const Description = () => {
       </div>
       <div className="m-auto flex justify-end items-center mx-10">
         <img
-          src="/public/programador.svg"
+          src="/public/img/programador.svg"
           alt="imagen1"
           className="h-96 m-auto"
           id="trigger-image"

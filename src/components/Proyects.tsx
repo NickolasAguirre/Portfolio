@@ -13,7 +13,7 @@ const projects = [
     title: "Proyecto sobre gestión de cine",
     description:
       "El ultimo proyecto que realize como estudiante fue el de cines, el cual nos permite hacer las reservas de las butacas y gestionar sus elementos",
-    imageSrc: "/public/CineFilos.jpg",
+    imageSrc: "/public/img/CineFilos.jpg",
     alt: "CineFilos",
     linkGitHub: "https://github.com/NickolasAguirre/",
   },
@@ -21,7 +21,7 @@ const projects = [
     title: "Busseando Tours",
     description:
       "En mi epoca de estudiante hice un proyecto de gestion de paquetes turisticos",
-    imageSrc: "/public/BusseandoTours.jpg",
+    imageSrc: "/public/img/BusseandoTours.jpg",
     alt: "BusseandoTours",
     linkGitHub: "https://github.com/NickolasAguirre/BusseandoTours",
   },
