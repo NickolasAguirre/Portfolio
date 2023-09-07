@@ -14,7 +14,6 @@ body {
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  font-size: 100px;
 }
 
 @keyframes moviendrew {
@@ -125,9 +124,4 @@ article:hover img:last-child {
   50% {
     border-color: transparent;
   }
-}
-
-.fila::before {
-  content: "• ";
-  color: aqua;
 }

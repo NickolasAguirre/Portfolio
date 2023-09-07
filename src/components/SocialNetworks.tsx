@@ -6,7 +6,7 @@ export const SocialNetworks = () => {
   return (
     <div
       style={{ display: "flex", gap: "50px" }}
-      className="grid place-content-center mr-10 space-x-10"
+      className="grid place-content-center mr-10 py-10 space-x-10 "
     >
       <div className="p-2 relative ">
         <span className="linkedin  absolute  border-3 border-white p-2 duration-500">

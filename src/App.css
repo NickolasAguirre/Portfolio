@@ -5,3 +5,13 @@
 body {
   color: white;
 }
+
+p {
+  font-family: "System UI", sans-serif;
+}
+
+h1 {
+  font-family: "System UI", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -8,104 +8,74 @@ import {
   SiDotnet,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
-import Programador from "/public/img/programador.svg";
 
+import Programador from "/public/img/programador.svg";
 const iconos = [
   {
-    icon: (
-      <SiMongodb
-        size={40}
-        className="text-white hover:text-green-500 duration-700"
-      />
-    ),
+    nombre: "MongoDB",
+    icon: <SiMongodb size={40} className="text-green-500 " />,
   },
   {
-    icon: (
-      <SiSpring
-        size={40}
-        className="text-white hover:text-[#AFFF33] duration-700"
-      />
-    ),
+    nombre: "Spring",
+    icon: <SiSpring size={40} className="text-[#AFFF33] " />,
   },
   {
-    icon: (
-      <SiJavascript
-        size={40}
-        className="hover:text-blue-600 duration-700 text-white"
-      />
-    ),
+    nombre: "JavaScript",
+    icon: <SiJavascript size={40} className=" text-blue-600  " />,
   },
   {
-    icon: (
-      <SiReact
-        size={40}
-        className="hover:text-sky-400 duration-700 text-white"
-      />
-    ),
+    nombre: "React",
+    icon: <SiReact size={40} className=" text-sky-400  " />,
   },
   {
-    icon: (
-      <SiMysql
-        size={40}
-        className="hover:text-orange-400 duration-700 text-white"
-      />
-    ),
+    nombre: "MySQL",
+    icon: <SiMysql size={40} className=" text-orange-400  " />,
   },
   {
-    icon: (
-      <SiDotnet
-        size={40}
-        className="hover:text-purple-800 duration-700 text-white "
-      />
-    ),
+    nombre: ".NET",
+    icon: <SiDotnet size={40} className="text-purple-800  " />,
   },
   {
-    icon: (
-      <SiCsharp
-        size={40}
-        className="hover:text-indigo-800  duration-700 text-white"
-      />
-    ),
+    nombre: "C#",
+    icon: <SiCsharp size={40} className=" text-indigo-800   " />,
   },
   {
-    icon: (
-      <DiJava
-        size={40}
-        className="hover:text-red-600 duration-700 text-white"
-      />
-    ),
+    nombre: "Java",
+    icon: <DiJava size={40} className=" text-red-600" />,
   },
 ];
-
 const Description = () => {
   return (
-    <div className="flex flex-col lg:flex-row bg-[#02152b] px-4 lg:px-20 py-40 m-auto">
+    <div
+      id="about"
+      className="flex flex-col lg:flex-row bg-[#02152b] px-10 2xl:px-20 py-40"
+    >
       <div className="">
         <h1 className="text-5xl font-bold text-cyan-500 whitespace-pre">
           Acerca de mí
         </h1>
         <div className="space-y-10 m-auto">
-          <p className="text-xl  text-white">
+          <p className="text-xl text-white">
             Hola, mundo, soy un desarrollador web apasionado y con múltiples
             habilidades. Con proyecto y experiencia en React, NextJS,
-            JavaScript, TypeScript, Java, C# y bases de datos, su guía hacia la
+            JavaScript, TypeScript, Java, C#, y bases de datos, su guía hacia la
             web del futuro.
           </p>
-          <p className="text-xl  text-white">
+          <p className="text-xl text-white">
             Mi objetivo es proporcionar soluciones innovadoras y efectivas para
             todos y trabajar de la mejor manera aportando mi valor.
           </p>
         </div>
-        <div className="flex lg:flex-row flex-col space-x-6">
+        <div className="flex lg:flex-row flex-col gap-10">
           <Education />
           <ImageTechnologies />
         </div>
       </div>
-      <div className="m-auto flex justify-end items-center mx-10">
+      <div className=" flex justify-end items-center xl:mx-10">
         <img
           src={Programador}
           alt="imagen1"
-          className="h-96 m-auto"
+          className="w-[700px]" // Establece un ancho fijo en píxeles (ajústalo según tus necesidades)
           id="trigger-image"
         />
       </div>
@@ -116,22 +86,26 @@ const Description = () => {
 const Education = () => {
   return (
     <div className="my-10">
-      <h1>Education</h1>
-      <ul className="">
-        <li className="fila">Desarrollo de sistemas de la informacion</li>
+      <h1 className="text-2xl mb-2">Education</h1>
+      <ul className="flex flex-col ">
+        <li>Desarrollo de sistemas de la informacion</li>
         <li>Idat</li>
       </ul>
     </div>
   );
 };
+
 export const ImageTechnologies = () => {
   return (
     <div className="my-10">
-      <h1 className="">Technical Skills</h1>
-      <ul className="grid grid-cols-4 lg:flex gap-5 ">
+      <h1 className="text-2xl ">Technical Skills</h1>
+      <ul className="grid grid-cols-4 place-items-center lg:flex gap-5">
         {iconos.map((icono, index) => (
-          <li className="duration-700 w-1/5" key={index}>
-            {icono.icon}
+          <li className="w-1/5" key={index}>
+            <div className="flex flex-col items-center">
+              {icono.icon}
+              {icono.nombre}
+            </div>
           </li>
         ))}
       </ul>
