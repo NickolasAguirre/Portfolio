@@ -7,7 +7,7 @@ import "swiper/css";
 
 export const Proyects = () => {
   return (
-    <div id="experience ">
+    <div>
       <CardProyects />
     </div>
   );
@@ -34,8 +34,10 @@ const projects = [
 
 const CardProyects = () => {
   return (
-    <div className="bg-[#000b1a] py-20 lg:py-20">
-      <h1 className="text-center text-5xl m-10">Mis proyectos</h1>
+    <div id="experience" className="bg-[#000b1a] py-20 lg:py-20">
+      <h1 className="text-center text-4xl sm:text-5xl  m-10 font-black text-cyan-500">
+        Mis proyectos
+      </h1>
       <div className="flex flex-col md:flex-row justify-center  gap-9 ">
         {projects.map((project, index) => (
           <Card key={index} className="w-96 mx-auto md:mx-0  bg-[#02253d]">

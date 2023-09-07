@@ -125,3 +125,32 @@ article:hover img:last-child {
     border-color: transparent;
   }
 }
+/* styles.css */
+
+.underline-expand {
+  position: relative;
+
+  color: #06b6d4;
+  font-weight: bold;
+}
+
+.underline-expand::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Grosor del subrayado */
+  background-color: #06b6d4; /* Color del subrayado */
+  bottom: 0;
+  left: 50%; /* Comienza desde el centro */
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.underline-expand:hover {
+  text-decoration: none;
+  color: #fff; /* Cambia el color del texto al hacer hover */
+}
+
+.underline-expand:hover::before {
+  width: 100%; /* Extiende el subrayado al 100% */
+}

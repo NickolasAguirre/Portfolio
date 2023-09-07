@@ -1,8 +1,10 @@
 const InputContact = () => {
   return (
-    <div id="contact">
+    <div>
       <div className="flex flex-col items-center justify-center py-52 px-10 sm:px-20 md:px-32 lg:px-40 xl:px-52 bg-[#02253d]">
-        <h1 className="text-6xl font-bold mb-3 text-white">Hablemos</h1>
+        <h1 className="text-4xl sm:text-5xl font-black text-cyan-500 mb-3 ">
+          Hablemos
+        </h1>
         <div className="text-center w-full lg:w-1/2">
           <p className="text-2xl leading-7  text-center my-10">
             ¿Tienes un proyecto interesante y necesitas un desarrollador poco

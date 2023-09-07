@@ -5,7 +5,7 @@ export const Presentation = () => {
     <div className="h-full pb-40 pt-20 sm:pt-40 bg-[#000b1a]">
       <div className="w-full max-w-6xl  m-auto">
         <div className="my-20 flex flex-col justify-center items-center">
-          <span className="write text-4xl lg:text-9xl text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
+          <span className="write text-4xl lg:text-9xl text-center  mb-10 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
             Nickolas Aguirre
           </span>
           <h4 className="role mx-4 sm:mx-10 md:mx-16 lg:mx-32 text-3xl lg:text-5xl font-mono">

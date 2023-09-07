@@ -5,6 +5,7 @@ import { FaGithubAlt } from "react-icons/fa";
 export const SocialNetworks = () => {
   return (
     <div
+      id="contact"
       style={{ display: "flex", gap: "50px" }}
       className="grid place-content-center mr-10 py-10 space-x-10 "
     >

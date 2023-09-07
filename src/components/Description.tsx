@@ -8,6 +8,7 @@ import {
   SiDotnet,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
+import { TbPointFilled } from "react-icons/tb";
 
 import Programador from "/public/img/programador.svg";
 const iconos = [
@@ -51,10 +52,10 @@ const Description = () => {
       className="flex flex-col lg:flex-row bg-[#02152b] px-10 2xl:px-20 py-40"
     >
       <div className="">
-        <h1 className="text-5xl font-bold text-cyan-500 whitespace-pre">
+        <h1 className="text-4xl sm:text-5xl font-black  text-cyan-500  my-5">
           Acerca de mí
         </h1>
-        <div className="space-y-10 m-auto">
+        <div className="space-y-2 m-auto">
           <p className="text-xl text-white">
             Hola, mundo, soy un desarrollador web apasionado y con múltiples
             habilidades. Con proyecto y experiencia en React, NextJS,
@@ -66,7 +67,7 @@ const Description = () => {
             todos y trabajar de la mejor manera aportando mi valor.
           </p>
         </div>
-        <div className="flex lg:flex-row flex-col gap-10">
+        <div className="flex lg:flex-row flex-col  gap-0 sm:gap-10">
           <Education />
           <ImageTechnologies />
         </div>
@@ -85,11 +86,13 @@ const Description = () => {
 
 const Education = () => {
   return (
-    <div className="my-10">
+    <div className="mt-10 mb-5">
       <h1 className="text-2xl mb-2">Education</h1>
       <ul className="flex flex-col ">
-        <li>Desarrollo de sistemas de la informacion</li>
-        <li>Idat</li>
+        <div className="flex items-center">
+          <TbPointFilled /> <li>Desarrollo de sistemas de la informacion</li>
+        </div>
+        <li className="mx-4">IDAT</li>
       </ul>
     </div>
   );
