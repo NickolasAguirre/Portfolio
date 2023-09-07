@@ -2,7 +2,7 @@ import ArrowButton from "./ArrowButton";
 
 export const Presentation = () => {
   return (
-    <div className="h-full pb-40 pt-10 bg-[#000b1a]">
+    <div className="h-full pb-40 pt-20 sm:pt-40 bg-[#000b1a]">
       <div className="w-full max-w-6xl  m-auto">
         <div className="my-20 flex flex-col justify-center items-center">
           <span className="write text-4xl lg:text-9xl text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
