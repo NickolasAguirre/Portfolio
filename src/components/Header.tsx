@@ -33,8 +33,8 @@ const Header = () => {
       <header className="bg-[#000b1a] p-7 absolute w-full sm:sticky top-0 z-50">
         <div className="flex-none md:flex p-3">
           <div className="flex justify-between items-center">
-            <div className="flex items-baseline ">
-              <h1 className=" text-3xl font-bold ml-0 md:ml-40 bg-clip-text text-transparent bg-gradient-to-r from-gray-50 to-cyan-500">
+            <div className="flex items-baseline">
+              <h1 className=" text-3xl font-bold ml-0 lg:ml-20 bg-clip-text text-transparent bg-gradient-to-r from-gray-50 to-cyan-500">
                 {"<Nick"}
               </h1>
               <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-gray-50 text-xl font-semibold ">
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none lg:hidden"
+              className="text-white focus:outline-none md:hidden"
             >
               {isMenuOpen ? (
                 <button className="button">
@@ -52,7 +52,7 @@ const Header = () => {
                   <div className="rotate-[-45deg]"></div>
                 </button>
               ) : (
-                <button className="button flex justify-center items-center">
+                <button className="button ">
                   <div></div>
                   <div></div>
                   <div></div>
@@ -61,7 +61,7 @@ const Header = () => {
             </button>
           </div>
           {/* Mostrar barra de navegación y navItems en dispositivos móviles */}
-          <nav className="mt-4 lg:hidden" style={menuStyle}>
+          <nav className="mt-2 md:hidden" style={menuStyle}>
             <ul className="space-y-2">
               {navItems.map(({ item, to }, index) => (
                 <li key={index}>
@@ -81,7 +81,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <ul className="space-x-6 hidden md:flex ml-auto mr-20 gap-20 text-xl cursor-pointer">
+          <ul className="space-x-6 hidden md:flex ml-auto  gap-20 text-xl cursor-pointer">
             {navItems.map(({ item, to }, index) => (
               <li key={index} className="duration-500 hover:relative">
                 <Link

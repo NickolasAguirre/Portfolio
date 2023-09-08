@@ -55,12 +55,13 @@ const Description = () => {
         <h1 className="text-4xl sm:text-5xl font-black  text-cyan-500  my-5">
           Acerca de mí
         </h1>
-        <div className="space-y-2 m-auto">
+        <div className="space-y-2 m-auto ">
           <p className="text-xl text-white">
-            Hola, mundo, soy un desarrollador web apasionado y con múltiples
-            habilidades. Con proyecto y experiencia en React, NextJS,
-            JavaScript, TypeScript, Java, C#, y bases de datos, su guía hacia la
-            web del futuro.
+            Hola mundo 👋, soy un desarrollador de software residente en Perú.
+            Actualmente soy egresado de desarrollo de sistemas de la informacion
+            , me gusta desarrollar web para facilitar la vida. Tengo habilidades
+            tanto en el backend con Java, Spring, C# y .NET como en el frontend
+            con HTML, CSS, JavaScript, TypeScript, React, NextJS.
           </p>
           <p className="text-xl text-white">
             Mi objetivo es proporcionar soluciones innovadoras y efectivas para
@@ -76,7 +77,7 @@ const Description = () => {
         <img
           src={Programador}
           alt="imagen1"
-          className="w-[700px]"
+          className="w-[1500px] "
           id="trigger-image"
         />
       </div>
