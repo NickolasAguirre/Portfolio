@@ -6,8 +6,8 @@ const ArrowButton = () => {
     <ScrollLink
       to="about"
       smooth={true}
-      offset={-70} // Ajusta según tu diseño
-      duration={500} // Duración de la animación en milisegundos
+      offset={-70}
+      duration={500}
       className="inline-block "
     >
       <BsArrowDown size={30} className="arrow" />

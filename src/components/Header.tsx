@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-import { Link } from "react-scroll"; // Importa Link desde react-scroll
+
+import { Link } from "react-scroll";
 
 const Header = () => {
   const navItems = [
@@ -81,7 +80,7 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-          {/* Mostrar navItems alineados a la derecha y a la misma altura que el título */}
+
           <ul className="space-x-6 hidden md:flex ml-auto mr-20 gap-20 text-xl cursor-pointer">
             {navItems.map(({ item, to }, index) => (
               <li key={index} className="duration-500 hover:relative">

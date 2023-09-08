@@ -76,7 +76,7 @@ const Description = () => {
         <img
           src={Programador}
           alt="imagen1"
-          className="w-[700px]" // Establece un ancho fijo en píxeles (ajústalo según tus necesidades)
+          className="w-[700px]"
           id="trigger-image"
         />
       </div>
