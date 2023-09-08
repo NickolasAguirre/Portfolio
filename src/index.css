@@ -172,3 +172,15 @@ article:hover img:last-child {
   transition: all 0.5s;
   transform-origin: left;
 }
+
+@media (max-width: 600px) {
+  .button > div {
+    width: 80%; /* Cambia el ancho a 80% para pantallas menores de 600px */
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    gap: 0.73rem; /* Cambia el ancho a 80% para pantallas menores de 600px */
+  }
+}

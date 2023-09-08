@@ -32,7 +32,7 @@ const Header = () => {
     <>
       <header className="bg-[#000b1a] p-7 absolute w-full sm:sticky top-0 z-50">
         <div className="flex-none md:flex p-3">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between space-x-10 items-center">
             <div className="flex items-baseline">
               <h1 className=" text-3xl font-bold ml-0 lg:ml-20 bg-clip-text text-transparent bg-gradient-to-r from-gray-50 to-cyan-500">
                 {"<Nick"}
@@ -46,13 +46,13 @@ const Header = () => {
               className="text-white focus:outline-none md:hidden"
             >
               {isMenuOpen ? (
-                <button className="button">
+                <button className="button ">
                   <div className="rotate-[45deg]"></div>
-                  <div className="opacity-0"></div>
+                  <div className="opacity-0 "></div>
                   <div className="rotate-[-45deg]"></div>
                 </button>
               ) : (
-                <button className="button ">
+                <button className="button mt-2">
                   <div></div>
                   <div></div>
                   <div></div>

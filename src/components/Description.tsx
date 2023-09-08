@@ -102,7 +102,7 @@ export const ImageTechnologies = () => {
   return (
     <div className="mt-10 mb-10">
       <h1 className="text-2xl mb-4 ">Habilidades Técnicas</h1>
-      <ul className="grid grid-cols-4 place-items-center lg:flex gap-5">
+      <ul className="grid grid-cols-4 place-items-center lg:flex gap-5 text-xs sm:text-base">
         {iconos.map((icono, index) => (
           <li className="w-1/5" key={index}>
             <div className="flex flex-col items-center">
