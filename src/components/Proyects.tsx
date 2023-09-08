@@ -73,8 +73,9 @@ const CardProyects = () => {
               <video
                 className="w-full h-full object-cover rounded-none"
                 src={FixaDigital}
-                autoPlay={true}
-                loop={true}
+                controls
+                autoPlay
+                loop
               />
             </div>
           </div>
