@@ -100,8 +100,8 @@ const Education = () => {
 
 export const ImageTechnologies = () => {
   return (
-    <div className="my-10">
-      <h1 className="text-2xl ">Technical Skills</h1>
+    <div className="mt-10 mb-10">
+      <h1 className="text-2xl mb-4 ">Technical Skills</h1>
       <ul className="grid grid-cols-4 place-items-center lg:flex gap-5">
         {iconos.map((icono, index) => (
           <li className="w-1/5" key={index}>

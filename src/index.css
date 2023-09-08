@@ -154,3 +154,22 @@ article:hover img:last-child {
 .underline-expand:hover::before {
   width: 100%; /* Extiende el subrayado al 100% */
 }
+
+.button {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 3rem;
+  border: 0;
+  background: transparent;
+  gap: 0.9rem;
+}
+
+.button > div {
+  background: white;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}

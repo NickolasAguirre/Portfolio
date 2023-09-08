@@ -31,17 +31,34 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-[#000b1a] p-7 absolute w-full">
+      <header className="bg-[#000b1a] p-7 absolute w-full sm:sticky top-0 z-50">
         <div className="flex-none md:flex p-3">
           <div className="flex justify-between items-center">
-            <h1 className="text-white text-2xl font-bold ml-20">
-              Mi Sitio Web
-            </h1>
+            <div className="flex items-baseline ">
+              <h1 className=" text-3xl font-bold ml-0 md:ml-40 bg-clip-text text-transparent bg-gradient-to-r from-gray-50 to-cyan-500">
+                {"<Nick"}
+              </h1>
+              <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-gray-50 text-xl font-semibold ">
+                {"Dev/>"}
+              </h1>
+            </div>
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none lg:hidden"
             >
-              {isMenuOpen ? <IoClose size={30} /> : <FaBars size={25} />}
+              {isMenuOpen ? (
+                <button className="button">
+                  <div className="rotate-[45deg]"></div>
+                  <div className="opacity-0"></div>
+                  <div className="rotate-[-45deg]"></div>
+                </button>
+              ) : (
+                <button className="button flex justify-center items-center">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+              )}
             </button>
           </div>
           {/* Mostrar barra de navegación y navItems en dispositivos móviles */}
