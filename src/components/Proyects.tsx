@@ -40,7 +40,10 @@ const CardProyects = () => {
       </h1>
       <div className="flex flex-col md:flex-row justify-center  gap-9 ">
         {projects.map((project, index) => (
-          <Card key={index} className="w-96 mx-auto md:mx-0  bg-[#02253d]">
+          <Card
+            key={index}
+            className="w-auto sm:w-96  mx-5 md:mx-0  bg-[#02253d]"
+          >
             <div className="overflow-visible">
               <div className="w-full h-full">
                 <Image
@@ -66,7 +69,7 @@ const CardProyects = () => {
         ))}
       </div>
 
-      <div className="grid place-content-center m-10">
+      <div className="grid place-content-center m-5 mt-9">
         <Card className="md:w-[800px] w-full h-full bg-[#02253d]">
           <div className="overflow-visible">
             <div className="w-full h-full">

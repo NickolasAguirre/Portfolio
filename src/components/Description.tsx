@@ -58,14 +58,13 @@ const Description = () => {
         <div className="space-y-2 m-auto ">
           <p className="text-xl text-white">
             Hola mundo 👋, soy un desarrollador de software residente en Perú.
-            Actualmente soy egresado de desarrollo de sistemas de la informacion
-            , me gusta desarrollar web para facilitar la vida. Tengo habilidades
-            tanto en el backend con Java, Spring, C# y .NET como en el frontend
-            con HTML, CSS, JavaScript, TypeScript, React, NextJS.
+            Actualmente, me he graduado en desarrollo de sistemas de información
+            y me apasiona el desarrollo web para facilitar la vida. Poseo
+            habilidades tanto en el backend como en el frontend.
           </p>
           <p className="text-xl text-white">
-            Mi objetivo es proporcionar soluciones innovadoras y efectivas para
-            todos y trabajar de la mejor manera aportando mi valor.
+            Mi objetivo es ofrecer soluciones innovadoras y efectivas para todos
+            y contribuir de la mejor manera posible, aportando mi valor.
           </p>
         </div>
         <div className="flex lg:flex-row flex-col  gap-0 sm:gap-10">
@@ -88,10 +87,10 @@ const Description = () => {
 const Education = () => {
   return (
     <div className="mt-10 mb-5">
-      <h1 className="text-2xl mb-2">Education</h1>
+      <h1 className="text-2xl mb-2">Educación</h1>
       <ul className="flex flex-col ">
         <div className="flex items-center">
-          <TbPointFilled /> <li>Desarrollo de sistemas de la informacion</li>
+          <TbPointFilled /> <li>Desarrollo de sistemas de la información</li>
         </div>
         <li className="mx-4">IDAT</li>
       </ul>
@@ -102,7 +101,7 @@ const Education = () => {
 export const ImageTechnologies = () => {
   return (
     <div className="mt-10 mb-10">
-      <h1 className="text-2xl mb-4 ">Technical Skills</h1>
+      <h1 className="text-2xl mb-4 ">Habilidades Técnicas</h1>
       <ul className="grid grid-cols-4 place-items-center lg:flex gap-5">
         {iconos.map((icono, index) => (
           <li className="w-1/5" key={index}>

@@ -7,9 +7,9 @@ const InputContact = () => {
         </h1>
         <div className="text-center w-full lg:w-1/2">
           <p className="text-2xl leading-7  text-center my-10">
-            ¿Tienes un proyecto interesante y necesitas un desarrollador poco
-            convencional? ¡Envíame un correo electrónico o contáctame por
-            mensaje instantáneo!
+            ¿Tienes un proyecto en mente que deseas desarrollar? ¡Estoy
+            totalmente dispuesto a hacerlo realidad, contáctame a través de
+            correo electrónico o vía mensaje directo!
           </p>
         </div>
         <div className="flex items-center ">

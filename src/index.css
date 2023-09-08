@@ -105,13 +105,12 @@ article:hover img:last-child {
 
 .write {
   display: block;
-  font-family: monospace;
+
   white-space: nowrap;
 
   width: 16ch;
 
   animation: typing 3s steps(16), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
 }
 
 @keyframes typing {
